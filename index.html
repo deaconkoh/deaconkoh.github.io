@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deacon Koh</title>
+    <meta name="author" content="Deacon Koh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ===== Header: identical in spirit to the Barron/Sameer layout ===== -->
+      <table class="header-table">
+        <tbody>
+          <tr>
+            <td class="header-text">
+              <p class="name">Deacon Koh</p>
+              <p>
+                I am a final-year Applied Computing (Fintech) undergraduate at
+                <a
+                  href="https://www.singaporetech.edu.sg/undergraduate-programmes/applied-computing-fintech"
+                  target="_blank"
+                  rel="noopener"
+                  >Singapore Institute of Technology (SIT)</a
+                >.
+              </p>
+
+              <p>
+                Currently, I am a Research Intern at
+                <a
+                  href="https://www.a-star.edu.sg/iaic/home"
+                  target="_blank"
+                  rel="noopener"
+                  >A*STAR IAIC</a
+                >, where I work on Text-to-SQL research, supervised by
+                <a
+                  href="https://ranjan13.github.io/"
+                  target="_blank"
+                  rel="noopener"
+                  >Dr. Ranjan Satapathy</a
+                >.
+              </p>
+
+              <p>
+                Concurrently, I serve as an Undergraduate Research Assistant at
+                SIT, working with
+                <a
+                  href="https://sites.google.com/view/sit-zhang-wei/"
+                  target="_blank"
+                  rel="noopener"
+                  >Dr. Zhang Wei</a
+                >
+                and
+                <a
+                  href="https://www.suss.edu.sg/academics/schools-college/faculty-listing/detail/liu-fang"
+                  target="_blank"
+                  rel="noopener"
+                  >Dr. Liu Fang</a
+                >
+                on Multi-Objective Flexible Job Shop Scheduling using deep
+                reinforcement learning.
+              </p>
+              <p class="links">
+                <a href="mailto:deaconkoh@hotmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="#">Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/deaconkoh/">LinkedIn</a>
+                &nbsp;/&nbsp;
+                <a href="https://github.com/deaconkoh">Github</a>
+              </p>
+            </td>
+            <td class="header-photo">
+              <img
+                src="images/profile.png"
+                alt="profile photo"
+                class="profile-img"
+                onerror="this.style.display = 'none'"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ===== Tabs ===== -->
+      <div class="tabbar" role="tablist" aria-label="Site sections">
+        <button
+          class="tab-btn active"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-about"
+          id="tab-about"
+          onclick="showTab('about')"
+        >
+          About
+        </button>
+        <button
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-projects"
+          id="tab-projects"
+          onclick="showTab('projects')"
+        >
+          Projects
+        </button>
+        <button
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-education"
+          id="tab-education"
+          onclick="showTab('education')"
+        >
+          Experience &amp; Education
+        </button>
+      </div>
+
+      <!-- ===== About panel ===== -->
+      <section
+        id="panel-about"
+        class="tab-panel"
+        role="tabpanel"
+        aria-labelledby="tab-about"
+      >
+        <h2>News</h2>
+        <table class="news-table">
+          <tbody>
+            <tr>
+              <td class="news-date">Sep 2026</td>
+              <td>
+                Started as a Research Assistant at <strong>SIT</strong>,
+                assisting Dr. Zhang Wei & Dr. Liu Fang on Multi-Objective
+                Flexible Job Shop Scheduling using a dual-attention deep
+                reinforcement learning approach.
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">Aug 2026</td>
+              <td>
+                Submitted paper on Accounting Diagnosis and Repair (ADiR) to
+                International Conference on AI in Finance (ICAIF), 2026.
+              </td>
+            </tr>
+
+            <tr class="news-extra hidden">
+              <td class="news-date">May 2026</td>
+              <td>
+                Started as a Research Intern at <strong>A*STAR</strong>, working
+                on financial Text-to-SQL.
+              </td>
+            </tr>
+            <tr class="news-extra hidden">
+              <td class="news-date">Sep 2025</td>
+              <td>
+                Started as a Research Assistant at <strong>SIT</strong>,
+                assisting Dr. Zhang Wei on Physics Guided Deep Learning Models
+                for Battery Analytics
+              </td>
+            </tr>
+            <tr class="news-extra hidden">
+              <td class="news-date">May 2025</td>
+              <td>
+                Started as an Automation Intern at <strong>LTA</strong>, working
+                on end-to-end automation solutions for internal financial
+                processes.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="news-toggle" onclick="toggleNews(this)">
+          Show more
+        </button>
+
+        <h2>Publications</h2>
+
+        <table class="project-table publication-table">
+          <tbody>
+            <tr>
+              <td class="project-thumb">
+                <img
+                  src="images/ADiR_overview.jpg"
+                  alt="ADiR"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="project-desc">
+                <a href="#" class="papertitle"
+                  >Accounting Diagnosis and Repair (ADiR): A Post-Generation
+                  Framework for Accounting-Semantic Reasoning in Text-to-SQL</a
+                >
+                <br />
+                Deacon Koh, Ranjan Satapathy, Song Yuting, Thorsten Neumann
+                <br />
+                Submitted to International Conference on AI in Finance (ICAIF),
+                2026
+                <br />
+                <a href="#">paper</a> /
+                <a href="https://github.com/Ranjan13/accounting-text-to-sql"
+                  >code</a
+                >
+                <p>
+                  Grounding Financial Text-to-SQL post-generation verification
+                  and repair using a shared reasoning framework derived from
+                  formal accounting invariants (GAAP/IFRS) to eliminate silent
+                  logic drift.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="project-thumb">
+                <div class="thumb-placeholder">?</div>
+              </td>
+              <td class="project-desc placeholder">
+                <span class="papertitle">[Second publication title]</span>
+                <br />
+                [Authors]
+                <br />
+                [Venue / year]
+                <br />
+                <a href="#">paper</a> / <a href="#">code</a>
+                <p>
+                  [One or two sentences describing the paper's main
+                  contribution.]
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ===== Projects panel ===== -->
+      <section
+        id="panel-projects"
+        class="tab-panel hidden"
+        role="tabpanel"
+        aria-labelledby="tab-projects"
+      >
+        <h2>Selected Projects</h2>
+
+        <table class="project-table">
+          <tbody>
+            <tr>
+              <td class="project-thumb">
+                <img
+                  src="images/demo.gif"
+                  alt="Demo"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="project-desc">
+                <a
+                  href="https://github.com/deaconkoh/AI-Powered-Transport-Analytical-Board"
+                  class="papertitle"
+                  >Predictive Transportation Platform</a
+                >
+                <br />
+                Cloud Computing & Big Data project | SIT, 2025
+                <br />
+                <a
+                  href="https://github.com/deaconkoh/AI-Powered-Transport-Analytical-Board/blob/main/docs/INF2006_Group15_Final_Report.pdf"
+                  >paper</a
+                >
+                /
+                <a
+                  href="https://github.com/deaconkoh/AI-Powered-Transport-Analytical-Board"
+                  >code
+                </a>
+                <p>
+                  A scalable, cloud-native system designed to transition urban
+                  navigation from reactive congestion reporting to proactive
+                  journey planning based on forecasted traffic conditions.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="project-thumb">
+                <img
+                  src="images/blacklitterman.png"
+                  alt="Black-Litterman Model"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="project-desc">
+                <a
+                  href="https://github.com/deaconkoh/BlackLitterMan"
+                  class="papertitle"
+                  >Asset Allocation Optimization with the Black-Litterman
+                  Model</a
+                >
+                <br />
+                Personal project | 2024
+                <br />
+                <a
+                  href="https://colab.research.google.com/drive/1Rszhyl3JsYnEoyRxauRe5BqmKC51NrAb?usp=sharing"
+                  >code</a
+                >
+                <p>
+                  This project explores how news sentiment can be integrated
+                  into portfolio allocation through the Black-Litterman
+                  model,combining investor views derived from FinBERT sentiment
+                  analysis and historical price data, the model dynamically
+                  adjusts portfolio weights on a monthly basis.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ===== Experience & Education panel ===== -->
+      <section
+        id="panel-education"
+        class="tab-panel hidden"
+        role="tabpanel"
+        aria-labelledby="tab-education"
+      >
+        <h2>Experience</h2>
+
+        <table class="edu-table">
+          <tbody>
+            <tr>
+              <td class="edu-thumb">
+                <img
+                  src="images/iaic.jpeg"
+                  alt="A*STAR"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Research Intern</strong>
+                <br />A*STAR <br /><span class="edu-date"
+                  >May 2026 &ndash; Present</span
+                >
+              </td>
+              <td class="edu-detail">
+                Working on financial Text-to-SQL research, supervised by Dr.
+                Ranjan Satapathy.
+              </td>
+            </tr>
+            <tr>
+              <td class="edu-thumb">
+                <img
+                  src="images/SIT.png"
+                  alt="SIT"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Research Assistant</strong>
+                <br />Singapore Institute of Technology <br /><span
+                  class="edu-date"
+                  >Sep 2025 &ndash; Present</span
+                >
+              </td>
+              <td class="edu-detail">
+                Assisted Dr. Zhang Wei and Dr. Liu Fang in research on
+                Multi-Objective Flexible Job Shop Scheduling using a
+                dual-attention deep reinforcement learning approach.
+              </td>
+            </tr>
+            <tr>
+              <td class="edu-thumb">
+                <img
+                  src="images/lta.jpeg"
+                  alt="LTA"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Automation Intern</strong>
+                <br />Land Transport Authority (LTA) <br /><span
+                  class="edu-date"
+                  >May 2025 &ndash; Aug 2025</span
+                >
+              </td>
+              <td class="edu-detail">
+                Developed end-to-end automation solutions for LTA's internal
+                financial processes, reducing reconciliation time by 93%.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Education</h2>
+
+        <table class="edu-table">
+          <tbody>
+            <tr>
+              <td class="edu-thumb">
+                <img
+                  src="images/sit.png"
+                  alt="SIT"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong
+                  >B.Sc. (Hons) in Applied Computing with a specialization in
+                  Fintech</strong
+                >
+                <br />Singapore Institute of Technology <br /><span
+                  class="edu-date"
+                  >2024 &ndash; 2027</span
+                >
+              </td>
+              <td class="edu-detail">
+                Provost List, Academic Year 2024&ndash;2025
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Certifications</h2>
+
+        <table class="edu-table cert-table">
+          <tbody>
+            <tr>
+              <td class="cert-thumb">
+                <img
+                  src="images/bloomberg.jpeg"
+                  alt="Bloomberg"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Bloomberg Market Concepts</strong>
+                <br />Bloomberg L.P. <br /><span class="edu-date"
+                  >Issued: Jan 2026</span
+                >
+                <br /><a
+                  class="cert-link"
+                  href="https://portal.bloombergforeducation.com/certificates/R2M2UnNvxV7w7RgE7ZrWDbCX"
+                  target="_blank"
+                  rel="noopener"
+                  >Verify credential</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-thumb">
+                <img
+                  src="images/financial_risk_mgt.jpeg"
+                  alt="Columbia University"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Financial Engineering and Risk Management</strong>
+                <br />Columbia University <br /><span class="edu-date"
+                  >Issued: Aug 2025</span
+                >
+                <br /><a
+                  class="cert-link"
+                  href="https://www.coursera.org/account/accomplishments/verify/9XHQXZP1ZGUG"
+                  target="_blank"
+                  rel="noopener"
+                  >Verify credential</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-thumb">
+                <img
+                  src="images/uipath.jpeg"
+                  alt="UiPath"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>Automation Developer Associate Training</strong>
+                <br />UiPath, Inc. <br /><span class="edu-date"
+                  >Issued: May 2025</span
+                >
+                <br /><a
+                  class="cert-link"
+                  href="https://credentials.uipath.com/4a2c0f55-fde3-4e07-818e-e512d089e60c#acc.1SfW9hQz"
+                  target="_blank"
+                  rel="noopener"
+                  >Verify credential</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-thumb">
+                <img
+                  src="images/google_bigquery.jpeg"
+                  alt="Google Cloud"
+                  onerror="this.style.display = 'none'"
+                />
+              </td>
+              <td class="edu-degree">
+                <strong>BigQuery for Data Analysts</strong>
+                <br />Google Cloud Skills Boost <br /><span class="edu-date"
+                  >Issued: Dec 2024</span
+                >
+                <br /><a
+                  class="cert-link"
+                  href="https://www.coursera.org/account/accomplishments/verify/TBRLVJ613RHY"
+                  target="_blank"
+                  rel="noopener"
+                  >Verify credential</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="site-footer">
+        Layout adapted from
+        <a
+          href="https://github.com/jonbarron/jonbarron.github.io"
+          target="_blank"
+          rel="noopener"
+          >Jon Barron's website source</a
+        >.
+      </footer>
+    </div>
+
+    <script>
+      function showTab(name) {
+        var panels = document.querySelectorAll(".tab-panel");
+        var tabs = document.querySelectorAll(".tab-btn");
+        panels.forEach(function (p) {
+          p.classList.add("hidden");
+        });
+        tabs.forEach(function (t) {
+          t.classList.remove("active");
+          t.setAttribute("aria-selected", "false");
+        });
+        document.getElementById("panel-" + name).classList.remove("hidden");
+        var activeTab = document.getElementById("tab-" + name);
+        activeTab.classList.add("active");
+        activeTab.setAttribute("aria-selected", "true");
+      }
+
+      function toggleNews(btn) {
+        var rows = document.querySelectorAll(".news-extra");
+        var willShow = rows.length && rows[0].classList.contains("hidden");
+        rows.forEach(function (row) {
+          row.classList.toggle("hidden", !willShow);
+        });
+        btn.textContent = willShow ? "Show less" : "Show more";
+      }
+    </script>
+  </body>
+</html>
