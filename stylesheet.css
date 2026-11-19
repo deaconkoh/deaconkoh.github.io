@@ -277,6 +277,35 @@ tr.news-extra.hidden {
   width: auto;
 }
 
+/* Native disclosure supports mouse, touch, and keyboard interaction. */
+.certifications-more > summary,
+.cert-collapse {
+  width: fit-content;
+  margin: 16px auto;
+  padding: 4px 8px;
+  color: #1772d0;
+  cursor: pointer;
+}
+.certifications-more > summary:hover,
+.cert-collapse:hover {
+  color: #f09228;
+}
+.certifications-more > summary:focus-visible,
+.cert-collapse:focus-visible {
+  outline: 2px solid #1772d0;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+.certifications-more[open] > summary {
+  display: none;
+}
+.cert-collapse {
+  display: block;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
 /* ===== Footer ===== */
 .site-footer {
   margin-top: 44px;
